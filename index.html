@@ -8,49 +8,211 @@
     <title>Bootstrap 101 Template</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+<body class="bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark mb-4">
         <div class="container">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
                 aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand" href="#">Jaemin Kim</a>
+            <a class="navbar-brand text-white" href="#">Jaemin Kim</a>
             <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo03">
                 <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Resume</a>
+                        <a class="nav-link text-white active" aria-current="page" href="#">Resume</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Portfolios</a>
+                        <a class="nav-link text-white" href="#">Portfolios</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="text-center">
-        <img src="./images/myIMG.jpeg" style="height: 40vh;
+    <div class="container-fluid min-vh-100 text-center">
+        <img class="rounded-circle img-thumbnail" src="./images/myIMG.jpeg" style="height: 40vh;
         max-width: none;
-        min-height: 320px;
-        margin-bottom: 64px;
+        min-height: 320 px;
+        margin-bottom: 30px;
         box-shadow: 3px 3px 10px -4px rgba(0,0,0,.2);
         -o-object-fit: cover;
-        object-fit: cover;" class="rounded" alt="...">
-    </div>
-    <div class="container pb-5" style="max-width: 750px;">
-        <p class="fs-2 fw-bolder text-center">Jaemin Kim</p>
-        <p class="fs-1 fw-bold text-center">Software Engineer & Web Developer</p>
-        <p class="fs-2 fw-normal text-center"> Web Design & Development für Unternehmen, die mithilfe einer großartigen
-            Webseite wachsen wollen.</p>
+        object-fit: cover;" alt="...">
+
+        <div class="container" style="max-width: 750px;">
+            <p id="name" class="fs-2 fw-bolder text-white text-center">Jaemin Kim</p>
+            <p id="position" class="fs-1 fw-bold text-white text-center">Software Engineer & Web Developer</p>
+            <p id="quote" class="fs-3 fw-normal text-white text-center"> Web Design & Development für Unternehmen, die
+                mithilfe einer
+                großartigen
+                Webseite wachsen wollen.</p>
+
+            <div class="container d-sm-none d-md-block d-none d-sm-block">
+                <span class="scroll-btn">
+                    <div class="mouse">
+                        <span>
+                        </span>
+                    </div>
+                </span>
+            </div>
+        </div>
     </div>
 
-    <div class="container-fluid" style="background-color: #f7f7f7">
-        
+
+    <div class="container-fluid min-vh-100 pt-5" style="background-color: #000000">
+        <div class="container">
+            <p id="pf1" class="fs-1 fw-bold text-white text-center pb-5">Portfolios</p>
+            <div class="row text-center">
+                <div class="col-md">
+                    <img class="rounded-circle img-thumbnail" src="/images/timer.png" alt="" style="height: 40vh; min-height: 250px;">
+                </div>
+
+                <div class="col-md col align-self-center pt-4">
+                    <p id="pf1t" class="fs-4 fw-bolder text-white text-center">Timer with React</p>
+                    <p id="pf1p" class="fs-5 fw-normal text-white text-center">Countdown the days until New Years Day
+                        with this countdown timer clock and write a better description for the project here</p>
+
+                    <div class="col-sm ">
+                        <span class="text-center text-white fs-1">
+                            <i class="fab fa-html5"></i>
+                        </span>
+                        <span class="text-center text-white fs-1">
+                            <i class="fab fa-js-square"></i>
+                        </span>
+                        <span class="text-center text-white fs-1">
+                            <i class="fab fa-css3-alt"></i>
+                        </span>
+                        <span class="text-center text-white fs-1">
+                            <i class="fab fa-react"></i>
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row text-center pt-5">
+                <div class="col-md">
+                    <img class="rounded-circle img-thumbnail" src="/images/blog.png" alt=""
+                        style="height: 40vh; min-height: 250px;">
+                </div>
+
+                <div class="col-md col align-self-center pt-4">
+                    <p id="pf1t" class="fs-4 fw-bolder text-white text-center">Github Blog</p>
+                    <p id="pf1p" class="fs-5 fw-normal text-white text-center">In order for all knowledge to be shared
+                        equally. Various information including algorithms, tricks, and new ideas is uploading with
+                        Jekyll theme with Minimal Mistake</p>
+
+                    <div class="col-sm">
+                        <span class="text-center text-white fs-1">
+                            <i class="fab fa-html5"></i>
+                        </span>
+                        <span class="text-center text-white fs-1">
+                            <i class="fab fa-js-square"></i>
+                        </span>
+                        <span class="text-center text-white fs-1">
+                            <i class="fab fa-sass"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center pt-5">
+                <div class="col-md">
+                    <img class="rounded-circle img-thumbnail" src="/images/analysis.png" alt=""
+                        style="height: 40vh; min-height: 250px;">
+                </div>
+
+                <div class="col-md col align-self-center pt-4">
+                    <p id="pf1t" class="fs-4 fw-bolder text-white text-center">Data Analysis</p>
+                    <p id="pf1p" class="fs-5 fw-normal text-white text-center">Analysis for motor vehicle collision in
+                        NYC with python. pandas, matplotlib, and bokeh.io, etc are used</p>
+
+                    <div class="col-sm">
+                        <span class="text-center text-white fs-1">
+                            <i class="fab fa-python"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center pt-5">
+                <div class="col-md">
+                    <img class="rounded-circle img-thumbnail" src="/images/autosign.png" alt=""
+                        style="height: 40vh; min-height: 250px;">
+                </div>
+
+                <div class="col-md col align-self-center pt-4">
+                    <p id="pf1t" class="fs-4 fw-bolder text-white text-center">AutoSign</p>
+                    <p id="pf1p" class="fs-5 fw-normal text-white text-center">QT based software that helps small
+                        business owners to sign up for the site for checking sales information. AWS RDS is used for
+                        managing 20+ people who are using this software currently.</p>
+
+                    <div class="col-sm">
+                        <span class="text-center text-white fs-1">
+                            <i class="fab fa-python"></i>
+                        </span>
+                        <span class="text-center text-white fs-1">
+                            <i class="fab fa-aws"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center pt-5">
+                <div class="col-md">
+                    <img class="rounded-circle img-thumbnail" src="/images/planto.png" alt=""
+                        style="height: 40vh; min-height: 250px;">
+                </div>
+
+                <div class="col-md col align-self-center pt-4">
+                    <p id="pf1t" class="fs-4 fw-bolder text-white text-center">Plantó</p>
+                    <p id="pf1p" class="fs-5 fw-normal text-white text-center">Cross-platform smartphone application for
+                        managing houseplants. Plantó is being developed with React Native and plan to release on Dec 31,
+                        2020</p>
+
+                    <div class="col-sm">
+                        <span class="text-center text-white fs-1">
+                            <i class="fab fa-react"></i>
+                        </span>
+                        <span class="text-center text-white fs-1">
+                            <i class="fab fa-java"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center pt-5">
+                <div class="col-md">
+                    <img class="rounded-circle img-thumbnail" src="/images/blog.png" alt=""
+                        style="height: 40vh; min-height: 250px;">
+                </div>
+
+                <div class="col-md col align-self-center pt-4">
+                    <p id="pf1t" class="fs-4 fw-bolder text-white text-center">Physics with Vanilla JS</p>
+                    <p id="pf1p" class="fs-5 fw-normal text-white text-center">Basic physics is implementing with Canvas
+                        API and vanilla javascript. It might be helpful for the pople who are struggling with math in
+                        programming</p>
+
+                    <div class="col-sm">
+                        <span class="text-center text-white fs-1">
+                            <i class="fab fa-html5"></i>
+                        </span>
+                        <span class="text-center text-white fs-1">
+                            <i class="fab fa-js-square"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+        });
+    </script>
 </body>
 
 </html>
