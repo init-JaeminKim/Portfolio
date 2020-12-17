@@ -60,7 +60,7 @@ function drawRare_amongUs() {
     for (var i = 0; i < rare_amongUs.length; i++) {
         r_amongUs = (Math.random() * 0.8) + 0.6;
         ctx_amongUs.moveTo(rare_amongUs[i][0], rare_amongUs[i][1]);
-        ctx_amongUs.arc(rare_amongUs[i][0] += 0.5, rare_amongUs[i][1], 1.7, 0, Math.PI * 2, true);
+        ctx_amongUs.arc(rare_amongUs[i][0] += 0.5, rare_amongUs[i][1], 2, 0, Math.PI * 2, true);
     }
     ctx_amongUs.fill();
 
@@ -73,7 +73,7 @@ function drawMiddle_amongUs() {
     for (var i = 0; i < middle_amongUs.length; i++) {
         r_amongUs = (Math.random() * 1) + 0.8;
         ctx_amongUs.moveTo(middle_amongUs[i][0], middle_amongUs[i][1]);
-        ctx_amongUs.arc(middle_amongUs[i][0] += 0.7, middle_amongUs[i][1], 2, 0, Math.PI * 2, true);
+        ctx_amongUs.arc(middle_amongUs[i][0] += 0.7, middle_amongUs[i][1], 2.5, 0, Math.PI * 2, true);
     }
     ctx_amongUs.fill();
 
@@ -86,7 +86,7 @@ function drawFront_amongUs() {
     for (var i = 0; i < front_amongUs.length; i++) {
         r_amongUs = (Math.random() * 3) + 1;
         ctx_amongUs.moveTo(front_amongUs[i][0], front_amongUs[i][1]);
-        ctx_amongUs.arc(front_amongUs[i][0] += 1, front_amongUs[i][1], 2.5, 0, Math.PI * 2, true);
+        ctx_amongUs.arc(front_amongUs[i][0] += 1, front_amongUs[i][1], 3, 0, Math.PI * 2, true);
     }
     ctx_amongUs.fill();
 
