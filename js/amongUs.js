@@ -58,7 +58,7 @@ function drawRare_amongUS() {
     for (var i = 0; i < rare_amongUS.length; i++) {
         r_amongUS = (Math.random() * 0.8) + 0.6;
         ctx_amongUS.moveTo(rare_amongUS[i][0], rare_amongUS[i][1]);
-        ctx_amongUS.arc(rare_amongUS[i][0] += 0.5, rare_amongUS[i][1], 2, 0, Math.PI * 2, true);
+        ctx_amongUS.arc(rare_amongUS[i][0] += 0.7, rare_amongUS[i][1], 2, 0, Math.PI * 2, true);
     }
     ctx_amongUS.fill();
 
@@ -71,7 +71,7 @@ function drawMiddle_amongUS() {
     for (var i = 0; i < middle_amongUS.length; i++) {
         r_amongUS = (Math.random() * 1) + 0.8;
         ctx_amongUS.moveTo(middle_amongUS[i][0], middle_amongUS[i][1]);
-        ctx_amongUS.arc(middle_amongUS[i][0] += 0.7, middle_amongUS[i][1], 2.5, 0, Math.PI * 2, true);
+        ctx_amongUS.arc(middle_amongUS[i][0] += 0.9, middle_amongUS[i][1], 2.5, 0, Math.PI * 2, true);
     }
     ctx_amongUS.fill();
 
@@ -84,7 +84,7 @@ function drawFront_amongUS() {
     for (var i = 0; i < front_amongUS.length; i++) {
         r_amongUS = (Math.random() * 3) + 1;
         ctx_amongUS.moveTo(front_amongUS[i][0], front_amongUS[i][1]);
-        ctx_amongUS.arc(front_amongUS[i][0] += 1, front_amongUS[i][1], 3, 0, Math.PI * 2, true);
+        ctx_amongUS.arc(front_amongUS[i][0] += 1.3, front_amongUS[i][1], 3, 0, Math.PI * 2, true);
     }
     ctx_amongUS.fill();
 
@@ -98,8 +98,8 @@ function drawFront_amongUS() {
         imposterX_amongUS = -70;
     }
 
-    imposterX_amongUS += 0.85;
-    imposterY_amongUS = canvas.height / 2 + 30 * Math.cos(imposterX_amongUS / 30);
+    imposterX_amongUS += 1.0;
+    imposterY_amongUS = canvas.height / 2 + 45 * Math.cos(imposterX_amongUS / 30);
 
 
 
