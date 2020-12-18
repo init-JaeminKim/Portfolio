@@ -9,8 +9,8 @@ var rare_amongUS = [];
 var middle_amongUS = [];
 var front_amongUS = [];
 
-var imposterX_amongUS = 0;
-var imposterY_amongUS = canvas.height / 2;
+var imposterX_amongUS = -300;
+var imposterY_amongUS = canvas_voted.height / 2;
 var image_amongUS = document.getElementById('imposter')
 
 
@@ -43,12 +43,10 @@ function generateStar_amongUS() {
 
 function canvasAnimation_amongUS() {
 
-    imposterX_amongUS++;
 
     drawRare_amongUS();
     drawMiddle_amongUS();
     drawFront_amongUS();
-    imposter_amongUS(imposterX_amongUS, imposterY_amongUS);
 
     canvasInterval = requestAnimationFrame(canvasAnimation_amongUS);
 
@@ -97,17 +95,16 @@ function drawFront_amongUS() {
     ctx_amongUS.fillText("Jaemin is a developer", 330, 100);
 
 
+    ctx_amongUS.drawImage(image_amongUS, imposterX_amongUS, imposterY_amongUS / 2, 70, 70)
 
-}
-
-function imposter_amongUS(x, y) {
-
-    ctx_voted.clearRect(0, 0, canvas.width, canvas.height);
-    ctx_voted.drawImage(image_amongUS, x, y / 2, 70, 70)
-
-    if (imposterX_amongUS > canvas.width * 1.1) {
-        imposterX_amongUS = 0;
+    if (imposterX_amongUS > canvas.width) {
+        imposterX_amongUS = -70;
     }
+
+    imposterX_amongUS += 0.85;
+    imposterY_amongUS = canvas.height / 2 + 30 * Math.cos(imposterX_amongUS / 30);
+
+
 
 }
 
