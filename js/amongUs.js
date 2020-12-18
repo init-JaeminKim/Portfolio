@@ -2,15 +2,12 @@ var canvas = document.getElementById('amongUs');
 var ctx_amongUS = canvas.getContext('2d');
 var canvasInterval = requestAnimationFrame(canvasAnimation_amongUS);
 
-var canvas_voted = document.getElementById('voted');
-var ctx_voted = canvas_voted.getContext('2d');
-
 var rare_amongUS = [];
 var middle_amongUS = [];
 var front_amongUS = [];
 
 var imposterX_amongUS = -300;
-var imposterY_amongUS = canvas_voted.height / 2;
+var imposterY_amongUS = canvas.height / 2;
 var image_amongUS = document.getElementById('imposter')
 
 
